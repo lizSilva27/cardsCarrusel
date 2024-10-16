@@ -29,7 +29,7 @@
         <div class="card__content">
           <span class="card__title">Dr. Velázquez</span>
           <p class="card__text">Dedicado a la investigación y consultoría para el sector público desde la perspectiva de la teoría organizacional y el análisis de políticas públicas.</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_dap/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
         <div class="card__content">
           <span class="card__title">Dra. DiGiannatale</span>
           <p class="card__text">La División de Economía es una división dinámica y con el claro objetivo de contribuir al avance de las ciencias económicas. Estos dan como resultado uno de los grupos de investigación más importantes de México y América Latina.</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_de/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -57,7 +57,7 @@
         <div class="card__content">
           <span class="card__title">Dr. Maldonado</span>
           <p class="card__text">El plan de estudios se ocupa de los temas políticos internacionales que afectan a México y pone especial énfasis en el estudio riguroso y aplicado de fenómenos transnacionales como la opinión pública, los derechos humanos, la migración, la integración regional, el terrorismo y el crimen organizado</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_dei/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -71,7 +71,7 @@
         <div class="card__content">
           <span class="card__title">Dra. Ibarra</span>
           <p class="card__text">El programa está dedicado a formar abogados de alta calidad. La carrera se basa en el análisis sistémico de casos y problemas jurídicos, lo que proporciona habilidades para la resolución de problemas jurídicos complejos y una sólida formación teórica</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_dej/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -85,7 +85,7 @@
         <div class="card__content">
           <span class="card__title">Dra. Davila</span>
           <p class="card__text">Investigación en temas de comunicación, filosofía económica, sociología de la desigualdad, seguridad y violencia</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_dem/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -99,7 +99,7 @@
         <div class="card__content">
           <span class="card__title">Dr. Aliphat</span>
           <p class="card__text">La División de Estudios del Desarrollo (DED) busca formar especialistas en el estudio y desarrollo de propuestas de problemas relacionados con el desarrollo económico y social de las economías emergentes</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_ded/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -113,7 +113,7 @@
         <div class="card__content">
           <span class="card__title">Dr. Sergio Bpejar</span>
           <p class="card__text">La división se centra en el estudio de las instituciones y procesos políticos del México contemporáneo. También ayuda en forma de servicios de consultoría a algunas agencias gubernamentales.</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_dep/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
 
@@ -127,11 +127,12 @@
         <div class="card__content">
           <span class="card__title">Dra. García</span>
           <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
-          <button class="card__btn">Ver Más »</button>
+          <a href="https://www.cide.edu/division_dh/" target="_blank" class="txtLinkDivision">Ver Más »</a>
         </div>
       </div>
-
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </section>
 
 <!-- Swiper JS -->
@@ -140,19 +141,22 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      effect: "coverflow",
-      grabCursor: true,
+      effect: "slider",
+      // grabCursor: true,
       centeredSlides: true,
+      initialSlide: 3,
       slidesPerView: "auto",
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       coverflowEffect: {
         rotate: 0,
         stretch: 0,
         depth: 300,
         modifier: 2,
         slideShadows: false,
-      },
-      pagination: {
-        el: ".swiper-pagination"
       },
     });
   </script>
